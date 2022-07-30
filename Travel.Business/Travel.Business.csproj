@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travel.Data\Travel.Data.csproj" />
+    <ProjectReference Include="..\Travel.DTO\Travel.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
