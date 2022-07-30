@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Travel.DTO\Travel.DTO.csproj" />
+    <ProjectReference Include="..\Travel.Utilities\Travel.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

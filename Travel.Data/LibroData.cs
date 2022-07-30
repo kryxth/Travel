@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Travel.DTO;
+using Travel.Utilities;
 
 namespace Travel.Data
 {
