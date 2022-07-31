@@ -12,6 +12,11 @@ namespace Travel.Business
             return new LibroData().Consultar();
         }
 
+        public Libro ConsultarPorId(int id)
+        {
+            return new LibroData().ConsultarPorId(id);
+        }
+
         public bool Guardar(Libro libro)
         {
             return new LibroData().Guardar(libro);

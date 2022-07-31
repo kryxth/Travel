@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using Travel.DTO;
 using Travel.Utilities;
@@ -11,7 +12,16 @@ namespace Travel.Data
         {
             using (var context = new TravelContext())
             {
-                return context.Libros.ToList();
+                return context.Libros.Include("Editoriales").ToList();
+            }
+        }
+
+        public Libro ConsultarPorId(int id)
+        {
+            using (var context = new TravelContext())
+            {
+                Libro libro = context.Libros.Find(id);
+                return libro;
             }
         }
 
