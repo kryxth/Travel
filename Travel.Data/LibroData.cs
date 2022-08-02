@@ -12,7 +12,7 @@ namespace Travel.Data
         {
             using (var context = new TravelContext())
             {
-                return context.Libros.Include("Editoriales").ToList();
+                return context.Libros.ToList();
             }
         }
 

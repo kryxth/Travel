@@ -51,8 +51,10 @@ namespace Travel.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Editoriales"] = new SelectList(_context.Editoriales, "Id", "Nombre", libro.Editoriales);
+            List<Editoriale> editoriales = new EditorialBusiness().Consultar();
+            ViewData["Editoriales"] = new SelectList(editoriales, "Id", "Nombre", libro.Editoriales);
             return View(libro);
         }
     }
+}
         
